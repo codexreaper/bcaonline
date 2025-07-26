@@ -132,6 +132,17 @@ body>.mainContainer {
 .mainContainer>.folders>a>.iconx>i {
   transform: scale(90%);
 }
+.mainContainer>.folders>a>.tagmark{
+  color: aqua;
+  font-size:8px;
+  position: absolute;
+  top:0;
+  right:5%;
+  background: #ffffff30;
+  padding:1px 5px;
+  border-radius: 0px 0px 4px 4px;
+  font-family: 'Ubuntu';
+}
 
 /* NAV-BAR */
 
@@ -248,4 +259,12 @@ body>.navBar {
 
 .navBar>span.on>i {
   opacity: 100%;
+}
+
+.discr{
+  margin-top: 20px;
+  color: #ffffffa1;
+  padding: 5px;
+  width: 90%;
+  text-align: center;
 }
