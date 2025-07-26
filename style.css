@@ -16,6 +16,7 @@
   --linksBG: #ffffff00;
   --iconGlint: repeating-conic-gradient(transparent, #ffffff20 20%);
   --bgFILTER: blur(10px);
+  --hoverBright: #ffffff40;
 }
 
 html {
@@ -113,6 +114,10 @@ body>.mainContainer {
   width: 100%;
   height: 100%;
   z-index: -1;
+  transition: box-shadow 500ms;
+}
+.mainContainer>.folders>a:hover::before{
+  box-shadow: inset 0px 0px 0px 300px var(--hoverBright);
 }
 
 .mainContainer>.folders>a>.iconx {
