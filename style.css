@@ -15,7 +15,7 @@
   --navBarBG: transparent;
   --linksBG: #ffffff00;
   --iconGlint: repeating-conic-gradient(transparent, #ffffff20 20%);
-  --bgFILTER: blur(10px);
+  --bgFILTER: blur(3px);
   --hoverBright: #ffffff40;
 }
 
