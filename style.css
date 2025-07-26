@@ -155,6 +155,7 @@ body>.navBar {
   border: none;
   background: var(--navBarBG);
   width: 100%;
+  max-width:650px;
   height: 50px;
   display: flex;
   align-items: center;
