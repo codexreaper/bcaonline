@@ -11,7 +11,7 @@
   --spring: cubic-bezier(0.47, 1.74, 0.41, 0.8);
   --textN: #fff;
   --lineorx: #ffffff10;
-  --folderBG: url("https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg");
+  --folderBG: black url("https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg");
   --navBarBG: transparent;
   --linksBG: #ffffff00;
   --iconGlint: repeating-conic-gradient(transparent, #ffffff20 20%);
@@ -39,7 +39,7 @@ body {
 }
 
 body>.creatorMark {
-  display:none;
+  display: none;
 }
 
 body>.mainContainer {
@@ -101,7 +101,7 @@ body>.mainContainer {
   overflow: hidden;
   -webkit-backdrop-filter: var(--bgFILTER);
   backdrop-filter: var(--bgFILTER);
-  border: 2px solid #ffffff30;
+  border: 2px solid var(--hoverBright);
 }
 
 .mainContainer>.folders>a::before {
@@ -116,7 +116,8 @@ body>.mainContainer {
   z-index: -1;
   transition: box-shadow 500ms;
 }
-.mainContainer>.folders>a:hover::before{
+
+.mainContainer>.folders>a:hover::before {
   box-shadow: inset 0px 0px 0px 300px var(--hoverBright);
 }
 
@@ -137,14 +138,15 @@ body>.mainContainer {
 .mainContainer>.folders>a>.iconx>i {
   transform: scale(90%);
 }
-.mainContainer>.folders>a>.tagmark{
+
+.mainContainer>.folders>a>.tagmark {
   color: aqua;
-  font-size:8px;
+  font-size: 8px;
   position: absolute;
-  top:0;
-  right:5%;
+  top: 0;
+  right: 5%;
   background: #ffffff30;
-  padding:1px 5px;
+  padding: 1px 5px;
   border-radius: 0px 0px 4px 4px;
   font-family: 'Ubuntu';
 }
@@ -155,7 +157,7 @@ body>.navBar {
   border: none;
   background: var(--navBarBG);
   width: 100%;
-  max-width:650px;
+  max-width: 650px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -267,7 +269,7 @@ body>.navBar {
   opacity: 100%;
 }
 
-.discr{
+.discr {
   margin-top: 20px;
   color: #ffffffa1;
   padding: 5px;
