@@ -11,7 +11,9 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+        :root{
+            --bgColor: url("https://wallpaper.forfun.com/fetch/fa/fad21490df06f8a43535e0b1a18f1d72.jpeg?w=1800")
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             min-height: 100vh;
@@ -19,7 +21,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: url("https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg") no-repeat center center fixed;
+            background: var(--bgColor) no-repeat center center fixed;
             background-size: cover;
             transition: background 0.3s ease;
             position: relative;
@@ -93,12 +95,12 @@
         
         /* Dark mode styles */
         body.dark-mode {
-            background: url("https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg") no-repeat center center fixed;
+            background: var(--bgColor) no-repeat center center fixed;
             background-size: cover;
         }
         
         body.dark-mode::before {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.3);
         }
         
         body.dark-mode .search-container {
@@ -139,6 +141,7 @@
             justify-content: center;
             transition: all 0.3s ease;
             z-index: 3;
+            opacity:0%;
         }
         
         body.dark-mode .theme-toggle {
