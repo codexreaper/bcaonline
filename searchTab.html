@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             min-height: 100vh;
@@ -23,7 +24,7 @@
             transition: background 0.3s ease;
             position: relative;
         }
-
+        
         body::before {
             content: '';
             position: absolute;
@@ -34,16 +35,16 @@
             background: rgba(0, 0, 0, 0.3);
             z-index: 1;
         }
-
+        
         .container {
-            position: relative;
-            top: -20%;
+            position: absolute;
+            top: 20%;
             z-index: 2;
             width: 90%;
             max-width: 600px;
             padding: 20px;
         }
-
+        
         .search-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -54,7 +55,7 @@
             align-items: center;
             transition: all 0.3s ease;
         }
-
+        
         .search-input {
             flex: 1;
             border: none;
@@ -64,7 +65,7 @@
             background: transparent;
             color: #333;
         }
-
+        
         .search-button {
             background: #4285f4;
             border: none;
@@ -78,50 +79,50 @@
             transition: all 0.3s ease;
             margin: 5px;
         }
-
+        
         .search-button:hover {
             background: #3367d6;
             transform: scale(1.05);
         }
-
+        
         .search-button svg {
             width: 20px;
             height: 20px;
             fill: white;
         }
-
+        
         /* Dark mode styles */
         body.dark-mode {
             background: url("https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg") no-repeat center center fixed;
             background-size: cover;
         }
-
+        
         body.dark-mode::before {
             background: rgba(0, 0, 0, 0.7);
         }
-
+        
         body.dark-mode .search-container {
             background: rgba(30, 30, 30, 0.95);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), -2px -2px 0px 0px deepskyblue, 2px 2px 0px 0px red;
         }
-
+        
         body.dark-mode .search-input {
             color: #f0f0f0;
         }
-
+        
         body.dark-mode .search-input::placeholder {
             color: #888;
         }
-
+        
         body.dark-mode .search-button {
             background: blueviolet;
             box-shadow: inset 5px 5px 20px 0px red, inset -5px -5px 20px 2px deepskyblue;
         }
-
+        
         body.dark-mode .search-button:hover {
             background: #7baaf6;
         }
-
+        
         /* Theme toggle */
         .theme-toggle {
             position: absolute;
@@ -139,15 +140,15 @@
             transition: all 0.3s ease;
             z-index: 3;
         }
-
+        
         body.dark-mode .theme-toggle {
             background: black;
         }
-
+        
         .theme-toggle:hover {
             transform: scale(1.1);
         }
-
+        
         /* Time display */
         .time-display {
             color: white;
@@ -159,7 +160,7 @@
             z-index: 2;
             position: relative;
         }
-
+        
         .date-display {
             color: white;
             font-size: 18px;
@@ -169,90 +170,87 @@
             z-index: 2;
             position: relative;
         }
-
+        
         /* Responsive */
         @media (max-width: 480px) {
             .time-display {
                 font-size: 36px;
             }
+            
             .date-display {
                 font-size: 16px;
             }
+            
             .search-input {
                 font-size: 14px;
             }
         }
     </style>
 </head>
+
 <body>
     <button class="theme-toggle" onclick="toggleTheme()">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12" y1="1" x2="12" y2="4" stroke="currentColor" stroke-width="2"/>
-            <line x1="12" y1="20" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
-            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="2"/>
-            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
-            <line x1="1" y1="12" x2="4" y2="12" stroke="currentColor" stroke-width="2"/>
-            <line x1="20" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
-            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="2"/>
-            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+            <line x1="12" y1="1" x2="12" y2="4" stroke="currentColor" stroke-width="2" />
+            <line x1="12" y1="20" x2="12" y2="23" stroke="currentColor" stroke-width="2" />
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34" stroke="currentColor" stroke-width="2" />
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" />
+            <line x1="1" y1="12" x2="4" y2="12" stroke="currentColor" stroke-width="2" />
+            <line x1="20" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" />
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66" stroke="currentColor" stroke-width="2" />
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" />
         </svg>
     </button>
-
+    
     <div class="container">
         <div class="time-display" id="time"></div>
         <div class="date-display" id="date"></div>
         
         <form class="search-container" onsubmit="performSearch(event)">
-            <input 
-                type="text" 
-                class="search-input" 
-                id="searchInput" 
-                placeholder="Search with Google"
-                autocomplete="off"
-            >
+            <input type="text" class="search-input" id="searchInput" placeholder="Search with Google" autocomplete="off">
             <button type="submit" class="search-button">
                 <svg viewBox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                 </svg>
             </button>
         </form>
     </div>
-
+    
     <script>
         // Theme toggle functionality
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');
             localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
         }
-
+        
         // Load saved theme
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-mode');
         }
-
+        
         // Time and date display
         function updateTime() {
             const now = new Date();
-            const time = now.toLocaleTimeString('en-US', { 
-                hour: '2-digit', 
+            const time = now.toLocaleTimeString('en-US', {
+                hour: '2-digit',
                 minute: '2-digit',
-                hour12: false 
+                hour12: false
             });
-            const date = now.toLocaleDateString('en-US', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+            const date = now.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
             });
             
             document.getElementById('time').textContent = time;
             document.getElementById('date').textContent = date;
         }
-
+        
         updateTime();
         setInterval(updateTime, 1000);
-
+        
         // Search functionality
         function performSearch(event) {
             event.preventDefault();
@@ -263,11 +261,12 @@
                 window.location.href = searchUrl;
             }
         }
-
+        
         // Focus on search input when page loads
         window.onload = function() {
             document.getElementById('searchInput').focus();
         };
     </script>
 </body>
+
 </html>
