@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber-Skills Roadmap 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #111;
+      --card: #252525;
+      --accent0: black;
+      --accent1: #00E3AB;
+      --accent2: #0096FF;
+      --accent3: #E8003B;
+      --text: #eee;
+      --text2: #bbb;
+      --text3: #eee;
+      --gray: #777;
+    }
+    
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 2rem
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: .5rem
+    }
+    
+    #search {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 2rem auto;
+      display: block;
+      padding: .7rem 1rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      background: #2a2a2a;
+      color: var(--text)
+    }
+    
+    .level {
+      margin-bottom: 2rem
+    }
+    
+    .level-header {
+      cursor: pointer;
+      padding: .8rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: .2s
+    }
+    .level-header > span{
+    	text-shadow: 0px 0px 0px #000000a1;
+    }
+    
+    .level-header:hover {
+      filter: brightness(1.2)
+    }
+    
+    .beginner {
+      background: var(--accent0);
+      color: var(--text3);
+      box-shadow: inset 100px 0px 100px -50px var(--accent1);
+    }
+    
+    .intermediate {
+      background: var(--accent0);
+      color: var(--text3);
+      box-shadow: inset 100px 0px 100px -50px var(--accent2);
+    }
+    
+    .advanced {
+      background: var(--accent0);
+      color: var(--text3);
+      box-shadow: inset 100px 0px 100px -50px var(--accent3);
+    }
+    
+    .level-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: .8rem;
+      padding: .8rem
+    }
+    
+    .item {
+      background: var(--card);
+      border-radius: 6px;
+      padding: .9rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: .2s
+      border:none;
+      border-left: 2px solid #000;
+      transition: all 0.5s;
+      box-shadow: inset 0px 0px 0px 0px #666;
+    }
+    .level-body.beginnerx .item{ border-color: var(--accent1);}
+    .level-body.intermediatex .item{ border-color: var(--accent2);}
+    .level-body.advancedx .item{ border-color: var(--accent3);}
+    
+    .item:hover {
+      box-shadow: inset 100px 0px 100px -50px #666;
+    }
+    
+    .item a {
+      color: var(--text2);
+      text-decoration: none;
+      font-weight: 600
+      transition: all 0.5s;
+    }
+    
+    .item a:hover {
+      color: white;
+    }
+    
+    .item small {
+      color: var(--gray);
+      margin-top: .4rem
+    }
+    
+    .hidden {
+      display: none
+    }
+    .telex{
+    	display: flex;
+      align-items: center;
+      justify-content: center;
+      width:100%;
+    }
+    .telex img{
+    	width:10%;
+    }
+    .telex a{
+    	text-decoration: none;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <h1>Cyber-Skills<br/>Roadmap 2025</h1><br/>
+  <div class="telex"><a href="https://t.me/c/2665702321/394"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png?20220101141644" ></a></div><br/><br/>
+  <!-- BEGINNER -->
+  <div class="level" data-level="beginner">
+    <div class="level-header beginner">
+      <span>Beginner -> Foundations</span>
+      <span class="toggle">+</span>
+    </div>
+    <div class="level-body beginnerx hidden">
+      <div class="item"><a href="https://www.stationx.net/kali-linux-tutorial/" target="_blank">Kali Linux Tutorial 2025</a></div>
+      <div class="item"><a href="https://www.stationx.net/linux-command-line-cheat-sheet/" target="_blank">Linux Commands Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/bash-cheat-sheet/" target="_blank">Bash Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/vi-cheat-sheet/" target="_blank">Vi Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/windows-command-line-cheat-sheet/" target="_blank">Windows Command Line Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/powershell-cheat-sheet/" target="_blank">PowerShell Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/osi-model-cheat-sheet/" target="_blank">OSI Model Cheat Sheet</a></div>
+      <div class="item"><a href="https://courses.stationx.net/courses?query=linux" target="_blank">Linux Courses Collection</a></div>
+      <div class="item"><a href="https://www.stationx.net/tcpdump-cheat-sheet/" target="_blank">tcpdump Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/google-dorks-cheat-sheet/" target="_blank">Google Dorks Cheat Sheet</a></div>
+    </div>
+  </div>
+  
+  <!-- INTERMEDIATE -->
+  <div class="level" data-level="intermediate">
+    <div class="level-header intermediate">
+      <span>Intermediate -> Real Hacking Skills</span>
+      <span class="toggle">+</span>
+    </div>
+    <div class="level-body intermediatex hidden">
+      <div class="item"><a href="https://www.stationx.net/hacking-tools-cheat-sheet/" target="_blank">Hacking Tools Cheat Sheet</a></div>
+      <div class="item"><a href="https://www.stationx.net/network-penetration-testing-tools/" target="_blank">Top 20 Network Penetration Testing Tools</a></div>
+      <div class="item"><a href="https://www.stationx.net/top-nmap-commands/" target="_blank">The Top 20 Nmap Commands</a></div>
+      <div class="item"><a href="https://www.stationx.net/nmap-cheat-sheet/" target="_blank">Nmap Cheat Sheet 2025</a></div>
+      <div class="item"><a href="https://www.stationx.net/is-port-scanning-legal/" target="_blank">Is Port Scanning Legal or Illegal</a></div>
+      <div class="item"><a href="https://www.stationx.net/metasploit-commands/" target="_blank">Metasploit Commands</a></div>
+      <div class="item"><a href="https://www.stationx.net/how-to-use-hydra/" target="_blank">How to Use Hydra</a></div>
+      <div class="item"><a href="https://www.stationx.net/wifi-password-hacking-softwares/" target="_blank">12 Top WiFi Password Hacking Softwares</a></div>
+      <div class="item"><a href="https://www.stationx.net/beef-hacking-tool/" target="_blank">How to Use BeEF Hacking Tool</a></div>
+      <div class="item"><a href="https://www.stationx.net/social-engineer-toolkit/" target="_blank">Social Engineer Toolkit (SET)</a></div>
+      <div class="item"><a href="https://www.stationx.net/how-to-hack-wifi-with-kali-linux/" target="_blank">How to Hack WiFi With Kali Linux</a></div>
+      <div class="item"><a href="https://www.stationx.net/evil-twin-wifi-attack/" target="_blank">Evil Twin WiFi Attack (Guide)</a></div>
+    </div>
+  </div>
+  
+  <!-- ADVANCED -->
+  <div class="level" data-level="advanced">
+    <div class="level-header advanced">
+      <span>Advanced -> Pentest / Red Team Core</span>
+      <span class="toggle">+</span>
+    </div>
+    <div class="level-body advancedx hidden">
+      <div class="item"><a href="https://www.stationx.net/windows-privilege-escalation/" target="_blank">Windows Privilege Escalation</a></div>
+      <div class="item"><a href="https://www.stationx.net/linux-privilege-escalation/" target="_blank">Linux Privilege Escalation</a></div>
+      <div class="item"><a href="https://www.stationx.net/pass-the-hash-attack/" target="_blank">Pass the Hash Attack</a></div>
+      <div class="item"><a href="https://www.stationx.net/how-to-use-powersploit/" target="_blank">How to Use PowerSploit</a></div>
+      <div class="item"><a href="https://www.stationx.net/how-to-perform-an-arp-poisoning-attack/" target="_blank">How to Perform ARP Poisoning Attack</a></div>
+    </div>
+  </div>
+  
+  <script>
+    // collapsible sections
+    document.querySelectorAll('.level-header').forEach(head => {
+      head.addEventListener('click', () => {
+        const body = head.nextElementSibling;
+        const arrow = head.querySelector('.toggle');
+        body.style.display = body.style.display === 'grid' ? 'none' : 'grid';
+        arrow.textContent = body.style.display === 'grid' ? '-' : '+';
+      });
+    });
+  </script>
+  
+</body>
+
+</html>
